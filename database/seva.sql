@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 05, 2022 at 10:24 AM
--- Server version: 10.4.21-MariaDB
--- PHP Version: 8.0.10
+-- Generation Time: Apr 07, 2023 at 02:15 PM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `truelysell-buyer`
+-- Database: `seva`
 --
 
 -- --------------------------------------------------------
@@ -43,7 +43,7 @@ CREATE TABLE `administrators` (
 --
 
 INSERT INTO `administrators` (`user_id`, `email`, `password`, `username`, `full_name`, `profile_img`, `role`, `token`) VALUES
-(1, 'admin@example.com', '21232f297a57a5a743894a0e4a801fc3', 'admin', 'Admin', 'uploads/profile_img/temp/1631853588.jpg', 1, '1527jtRTJMosIlY');
+(1, 'admin@example.com', '21232f297a57a5a743894a0e4a801fc3', 'admin', 'Admin', 'uploads/profile_img/temp/1679312170.jpg', 1, '1527jtRTJMosIlY');
 
 -- --------------------------------------------------------
 
@@ -55980,7 +55980,7 @@ CREATE TABLE `system_settings` (
 INSERT INTO `system_settings` (`id`, `key`, `value`, `system`, `groups`, `update_date`, `status`) VALUES
 (74, 'website_facebook_app_secret', '', 1, 'config', '2018-12-12', 1),
 (76, 'website_google_client_secret', '', 1, 'config', '2018-12-12', 1),
-(93, 'favicon', 'favicon.png', 1, 'config', '2022-01-05', 1),
+(93, 'favicon', '1679312957_1679312357_1671618789_Seva-designstyle-kiddo-l.png', 1, 'config', '2023-03-20', 1),
 (454, 'domain_link', 'tesr', 1, 'config', '2020-01-07', 1),
 (455, 'websocket_port', '8191', 1, 'config', '2020-01-07', 1),
 (462, 'apns_key', '', 1, 'config', '2020-01-07', 1),
@@ -55991,7 +55991,7 @@ INSERT INTO `system_settings` (`id`, `key`, `value`, `system`, `groups`, `update
 (1424, 'port_no', '8191', 1, 'config', '2020-05-15', 1),
 (2966, 'paypal_gateway', 'sandbox', 1, 'config', '2020-10-10', 1),
 (3061, 'paypal_option', '1', 1, '', '0000-00-00', 1),
-(4268, 'logo_front', 'assets/img/logo.png', 1, 'config', '2021-12-10', 1),
+(4268, 'logo_front', 'uploads/logo/1679312357_1671618789_Seva-designstyle-kiddo-l.png', 1, 'config', '2023-03-20', 1),
 (4326, 'razor_option', '1', 1, '', '0000-00-00', 1),
 (4451, 'mail_config', 'smtp', 1, 'config', '2021-04-01', 1),
 (4452, 'email_address', 'demo2', 1, 'config', '2021-04-01', 1),
@@ -56026,23 +56026,23 @@ INSERT INTO `system_settings` (`id`, `key`, `value`, `system`, `groups`, `update
 (7890, 'paystack_secret_apikey', '', 1, 'config', '2021-12-01', 1),
 (8416, 'appsection_showhide', 'show', 1, 'config', '2021-12-01', 1),
 (8683, 'category_enable', '1', 1, 'config', '2021-12-07', 1),
-(8690, 'language', 'en', 1, 'config', '2022-04-26', 1),
-(8691, 'header_icon', 'assets/img/logo-icon.png', 1, 'config', '2022-01-05', 1),
+(8690, 'language', 'en', 1, 'config', '2023-03-20', 1),
+(8691, 'header_icon', 'uploads/logo/1679312957_1671618789_Seva-designstyle-kiddo-l.png', 1, 'config', '2023-03-20', 1),
 (8692, 'service_placeholder_image', 'assets/img/service-placeholder.jpg', 1, 'config', '2022-01-05', 1),
 (8693, 'profile_placeholder_image', 'assets/img/user-placeholder.jpg', 1, 'config', '2022-01-05', 1),
-(8748, 'meta_keyword', 'service', 1, 'config', '2022-01-05', 1),
-(8749, 'meta_desc', 'Test Description for Truelysell product', 1, 'config', '2022-01-05', 1),
-(8891, 'website_name', 'Truelysell', 1, 'config', '2022-04-26', 1),
-(8892, 'contact_details', 'Coimbatore', 1, 'config', '2022-04-26', 1),
-(8893, 'mobile_number', '9842576886', 1, 'config', '2022-04-26', 1),
-(8894, 'radius', '50', 1, 'config', '2022-04-26', 1),
+(8748, 'meta_keyword', 'service', 1, 'config', '2023-03-20', 1),
+(8749, 'meta_desc', 'seva', 1, 'config', '2023-03-20', 1),
+(8891, 'website_name', 'SEVA', 1, 'config', '2023-03-20', 1),
+(8892, 'contact_details', 'PUNE', 1, 'config', '2023-03-20', 1),
+(8893, 'mobile_number', '9850215478', 1, 'config', '2023-03-20', 1),
+(8894, 'radius', '50', 1, 'config', '2023-03-20', 1),
 (8898, 'timezone', 'Asia/Kolkata', 1, 'config', '2021-12-20', 1),
-(8899, 'commission', '15', 1, 'config', '2022-04-26', 1),
+(8899, 'commission', '15', 1, 'config', '2023-03-20', 1),
 (8900, 'map_key', '', 1, 'config', '2022-04-21', 1),
 (8901, 'login_type', 'mobile', 1, 'config', '2022-04-18', 1),
 (8902, 'otp_by', 'sms', 1, 'config', '2022-04-18', 1),
 (8903, 'firebase_server_key', '', 1, 'config', '2021-12-20', 1),
-(8904, 'meta_title', 'TruelySell on demand application', 1, 'config', '2022-01-05', 1),
+(8904, 'meta_title', 'seva', 1, 'config', '2023-03-20', 1),
 (8905, 'meta_keywords', 'TruelySell', 1, 'config', '2021-12-20', 1),
 (8906, 'meta_description', 'TruelySell', 1, 'config', '2021-12-20', 1),
 (8907, 'meta_robots', '', 1, 'config', '2021-12-20', 1),
@@ -56132,15 +56132,16 @@ INSERT INTO `system_settings` (`id`, `key`, `value`, `system`, `groups`, `update
 (9201, 'new_title_services', 'Latest Services', 1, 'config', '2022-04-18', 1),
 (9202, 'new_content_services', 'New Services', 1, 'config', '2022-04-18', 1),
 (9203, 'new_services_count', '10', 1, 'config', '2022-04-18', 1),
-(9211, 'time_zone', 'India', 1, 'config', '2022-04-18', 1),
-(9212, 'date_format', 'd M Y', 1, 'config', '2022-04-18', 1),
-(9213, 'time_format', '24 Hours', 1, 'config', '2022-04-18', 1),
-(9214, 'countryCode', '91', 1, 'config', '2022-04-18', 1),
-(9215, 'country_code_key', 'in', 1, 'config', '2022-04-18', 1),
-(9216, 'currency_option', 'USD', 1, 'config', '2022-04-18', 1),
-(9217, 'currency_symbol', '$', 1, 'config', '2022-04-18', 1),
 (9218, 'analytics_showhide', '1', 1, 'config', '2022-05-05', 1),
-(9219, 'google_analytics', '', 1, 'config', '2022-05-05', 1);
+(9219, 'google_analytics', '', 1, 'config', '2022-05-05', 1),
+(9220, 'radius_showhide', '0', 1, 'config', '2023-03-20', 1),
+(9228, 'time_zone', 'India', 1, 'config', '2023-03-20', 1),
+(9229, 'date_format', 'd M Y', 1, 'config', '2023-03-20', 1),
+(9230, 'time_format', '24 Hours', 1, 'config', '2023-03-20', 1),
+(9231, 'countryCode', '91', 1, 'config', '2023-03-20', 1),
+(9232, 'country_code_key', 'in', 1, 'config', '2023-03-20', 1),
+(9233, 'currency_option', 'INR', 1, 'config', '2023-03-20', 1),
+(9234, 'currency_symbol', '₹', 1, 'config', '2023-03-20', 1);
 
 -- --------------------------------------------------------
 
@@ -57191,7 +57192,7 @@ ALTER TABLE `subscription_payment`
 -- AUTO_INCREMENT for table `system_settings`
 --
 ALTER TABLE `system_settings`
-  MODIFY `id` smallint(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9220;
+  MODIFY `id` smallint(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9235;
 
 --
 -- AUTO_INCREMENT for table `theme_color_change`
