@@ -1,0 +1,145 @@
+             +--------------------------+
+             |  Service Booking Website  |
+             +--------------------------+
+                            |
+                     +------------+
+                     | User Login |
+                     +------------+
+                            |
+                   +----------------+
+                   | Browse Services|
+                   +----------------+
+                            |
+                   +----------------+
+                   | Search Services|
+                   +----------------+
+                            |
+                   +----------------+
+                   | View Service   |
+                   | Information    |
+                   +----------------+
+                            |
+                   +----------------+
+                   | Make Booking   |
+                   +----------------+
+                            |
+                   +----------------+
+                   | Cancel Booking |
+                   +----------------+
+                            |
+                   +----------------+
+                   | Leave Feedback |
+                   +----------------+
+                            |
+                   +----------------+
+                   | Update Account |
+                   | Information    |
+                   +----------------+
+
+This data flow diagram shows the different data flows and processes involved in a service booking website. 
+The user logs in, browses or searches for services, and then views more information about a specific service. 
+They can then make a booking, cancel a booking, or leave feedback about the service. 
+Finally, they can update their account information.
+ These processes involve interactions with a database that stores information about users, services, bookings, and feedback.
+
+
+
+ Level 0 DFD:
+
+        +--------------------------+
+       |  Service Booking Website  |
+       +--------------------------+
+                    |
+            +-------+-------+
+            |               |
+     +------+-------+  +----+------+
+     | User Database |  | Service  |
+     +---------------+  | Database |
+                         +----------+
+This Level 0 DFD shows the two main data sources of the system,
+ the User Database and the Service Database, and the system itself, represented as the Service Booking Website.                         
+
+
+Level 1 DFD:
+
+       +--------------------------+
+       |  Service Booking Website  |
+       +--------------------------+
+                    |
+            +-------+-------+
+            |               |
+     +------+-------+  +----+------+
+     | User Database |  | Service  |
+     +---------------+  | Database |
+                         +----------+
+                               |
+                      +--------+-------+
+                      |                |
+               +------+-------+ +-----+-------+
+               | Browse/Search | | View Service |
+               +---------------+ +-------------+
+
+This Level 1 DFD shows the main functionalities of the Service Booking Website, namely browsing and searching for services, 
+and viewing the details of a particular service. 
+These functionalities are represented by the Browse/Search and View Service processes, respectively.
+
+Level 2 DFD:
+
+       +--------------------------+
+       |  Service Booking Website  |
+       +--------------------------+
+                    |
+            +-------+-------+
+            |               |
+     +------+-------+  +----+------+
+     | User Database |  | Service  |
+     +---------------+  | Database |
+                         +----------+
+                               |
+                      +--------+-------+
+                      |                |
+               +------+-------+ +-----+-------+
+               | Browse/Search | | View Service |
+               +---------------+ +-------------+
+                               |
+                      +--------+-------+
+                      |                |
+                +-----+-------+  +-----+--------+
+                | View Service |  | Make Booking |
+                +--------------+  +-------------+
+
+This Level 2 DFD expands on the View Service process, adding the ability to make a booking for that service.
+
+Level 3 DFD:
+
+       +--------------------------+
+       |  Service Booking Website  |
+       +--------------------------+
+                    |
+            +-------+-------+
+            |               |
+     +------+-------+  +----+------+
+     | User Database |  | Service  |
+     +---------------+  | Database |
+                         +----------+
+                               |
+                      +--------+-------+
+                      |                |
+               +------+-------+ +-----+-------+
+               | Browse/Search | | View Service |
+               +---------------+ +-------------+
+                               |
+                      +--------+-------+
+                      |                |
+                +-----+-------+  +-----+--------+
+                | View Service |  | Make Booking |
+                +--------------+  +-------------+
+                               |
+                      +--------+-------+
+                      |                |
+             +------+-------+  +-----+--------+
+             | Cancel Booking | | Leave Feedback |
+             +---------------+ +---------------+
+
+This Level 3 DFD expands on the Make Booking process, adding the ability to cancel a booking or 
+leave feedback about the service after the booking is completed.

@@ -1,0 +1,20 @@
+                    +-------------------------------------+
+                    |         Service Booking Website      |
+                    +-------------------------------------+
+                               /           |            \
+                              /            |             \
+                      Login/Register    Browse Services   Search Services
+                            |                |                 |
+                            |                |                 |
+                      Manage Account   View Service Info    Make Booking
+                            |                |                 |
+                            |                |                 |
+                   Update Account Info   Leave Feedback    Cancel Booking
+
+
+This use case diagram shows the different actors and use cases for a service booking website.
+ Users can either log in or register to create an account. 
+ Once logged in, they can browse available services and search for specific services based on criteria like location, category, or price.
+ They can view more information about a specific service and make a booking for that service. 
+ After a booking is made, they can leave feedback about the service or cancel the booking if necessary. 
+Finally, they can manage their account by updating their personal information.
