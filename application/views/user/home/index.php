@@ -703,7 +703,8 @@ $howit_showhide = $this->db->get_where('system_settings',array('key'=> 'how_show
 </section>
 <?php } ?>
 <!-- App Section -->
-<?php  if(settingValue('download_showhide') == 1) { ?>
+<?php // if(settingValue('download_showhide') == 1) { 
+    if(false) {?>
     <section class="app-section" id="how-work">
         <div class="container">
             <div class="row">
