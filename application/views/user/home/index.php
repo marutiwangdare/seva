@@ -56,10 +56,10 @@ if(!empty($bgresult[0]['banner_sub_content']))
 else
 {
 	$banner_sub_content="Search From 0 Awesome Verified Ads!";
-    $banner_sub_content="Your Everday Companion!";
 }
+
 $banner_content="SEVA";
-$banner_sub_content="Your Everday Companion!";
+$banner_sub_content="Your Everyday Companion!";
 $banner_showhide = $this->db->get_where('bgimage',array('bgimg_id'=> 1))->row();
 $howit_showhide = $this->db->get_where('system_settings',array('key'=> 'how_showhide'))->row();
 
