@@ -46,6 +46,7 @@ if(!empty($bgresult[0]['banner_content']))
 else
 {
 	$banner_content="World's Largest Marketplace";
+   
 }
 
 if(!empty($bgresult[0]['banner_sub_content']))
@@ -55,7 +56,10 @@ if(!empty($bgresult[0]['banner_sub_content']))
 else
 {
 	$banner_sub_content="Search From 0 Awesome Verified Ads!";
+    $banner_sub_content="Your Everday Companion!";
 }
+$banner_content="SEVA";
+$banner_sub_content="Your Everday Companion!";
 $banner_showhide = $this->db->get_where('bgimage',array('bgimg_id'=> 1))->row();
 $howit_showhide = $this->db->get_where('system_settings',array('key'=> 'how_showhide'))->row();
 
@@ -609,7 +613,8 @@ $howit_showhide = $this->db->get_where('system_settings',array('key'=> 'how_show
     </div>
 </section>
 <?php  }  ?>
-<?php  if(settingValue('how_showhide') == 1) { ?>
+<?php  //if(settingValue('how_showhide') == 1) { 
+       if(false){?>
 <section class="how-work">
     <div class="container">
         <div class="row">
